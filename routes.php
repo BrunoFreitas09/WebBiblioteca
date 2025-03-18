@@ -11,7 +11,7 @@
 
     $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-    swithc($url){
+    switch($url){
         case '/':
             InicialController::index();
         break;
