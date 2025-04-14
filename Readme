@@ -1,0 +1,24 @@
+# AppMob
+
+Aplicação web desenvolvida em PHP, estruturada em uma arquitetura MVC (Model-View-Controller). O projeto é organizado em pastas separadas para Controllers, Models e DAOs, e inclui arquivos de configuração, rotas e autoload.
+
+## Estrutura do Projeto
+
+- **Controller/**: Contém os controladores responsáveis por lidar com as requisições e coordenar as respostas.
+- **Model/**: Define as classes que representam os dados e a lógica de negócios da aplicação.
+- **DAO/**: Implementa o acesso aos dados, facilitando a interação com o banco de dados.
+- **config.php**: Arquivo de configuração da aplicação, incluindo parâmetros de conexão e outras definições.
+- **autoload.php**: Gerencia o carregamento automático das classes utilizadas no projeto.
+- **routes.php**: Define as rotas da aplicação, mapeando URLs para os controladores correspondentes.
+- **index.php**: Ponto de entrada principal da aplicação.
+
+## Tecnologias Utilizadas
+
+- **PHP**: Linguagem principal utilizada no desenvolvimento da aplicação.
+- **Arquitetura MVC**: Padrão de projeto que separa a aplicação em três componentes principais: Model, View e Controller.
+
+## Como Executar o Projeto
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/BrunoFreitas09/AppMob.git
