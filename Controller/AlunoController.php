@@ -55,6 +55,23 @@ final class AlunoController extends Controller
 
         parent::render('Aluno/form_aluno.php', $model);
     }
-}
+
+    public static function delete() : void
+    {
+        parent::isProtected();
+        
+        $model = new aluno();
+
+        try {
+            $model->delete( (int) $_GET ['id']);
+            parent::redirect("/aluno");
+        } catch (Exception $e) 
+        {
+            $model->setError("Ocorreu um erro ao excluir um aluno.");
+            $model->setError($e->getMessage());    
+        }
+        parent::render('Aluno/lista_aluno.php', $model);
+    }
+}//fim da classe
 
 ?>
