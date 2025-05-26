@@ -1,7 +1,7 @@
 <?php
 
 use App\DAO\AlunoDAO;
-use Exceptions;
+use Exception;
 final class Aluno extends BadMethodCallException
 {
     public ?int $Id = null;

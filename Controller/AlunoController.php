@@ -3,7 +3,7 @@
 namespace App\Controller;
 use App\Model\Aluno;
 
-use Exceptions;
+use Exception;
 
 final class AlunoController extends Controller
 {
