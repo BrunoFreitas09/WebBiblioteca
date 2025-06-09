@@ -56,4 +56,3 @@ final class Autor extends BadMethodCallException
     }
 }
 ?>
-//// por hora eu parei por aqui 
