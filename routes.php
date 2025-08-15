@@ -1,98 +1,108 @@
 <?php
-    use App\Controller\{
-        AlunoController,
-        InicialController,
-        LoginController,
-        AutorController,
-        CategoriaController,
-        LivroController,
-        EmprestimoController
-    };
 
-    $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+use App\Controller\{
+    AlunoController,
+    InicialController,
+    LoginController,
+    AutorController,
+    CategoriaController,
+    LivroController,
+    EmprestimoController
+};
 
-    switch($url){
-        case '/':
-            InicialController::index();
-        break;
-        
-        //
-        // rotas para login
-        //
-        case '/login':
-            LoginController::index();
-        break;
+$url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-        case '/logout':
-            LoginController::logout();
-        break;
+//var_dump($url);
 
-        case '/aluno':
-            AlunoController::index();
-        break;
+switch($url)
+{
+    case '/':
+        InicialController::index();
+    break;    
 
-        case '/aluno/cadastro':
-            AlunoController::cadastro();
-        break;
+    /**
+     * Rotas para Login
+     */
+    case '/login':
+        LoginController::index();
+    break;
 
-        case 'aluno/delete':
-            AlunoController::delete();
-        break;
+    case '/logout':
+        LoginController::logout();
+    break;
 
-        //
-        //rotas para autores
-        //
-        case'/autor':
-            AutorController::index();
-        break;
+    /**
+     * Rotas para alunos
+     */
+    case '/aluno':        
+        AlunoController::index();
+    break;
 
-        case'/autor/cadastro':
-            AutorController::cadastro();
-        break;
+    case '/aluno/cadastro':
+        AlunoController::cadastro();
+    break;
 
-        case '/autor/delete':
-            AutorController::delete();
-        break;
+    case '/aluno/delete':
+        AlunoController::delete();
+    break;
 
-        //
-        // Rotas para categorias
-        //  
+    /**
+     * Rotas para autores
+     */
+    case '/autor':        
+        AutorController::index();
+    break;
 
-        case '/categoria':
-            CategoriaController::index();
-        break;
+    case '/autor/cadastro':
+        AutorController::cadastro();
+    break;
 
-        case 'categoria/cadastro':
-            CategoriaController::cadastro();
-        break;
-        //
-        // Rotas para livros
-        //
+    case '/autor/delete':
+        AutorController::delete();
+    break;
 
-        case'/livro':
-            LivroController::index();
-        break;
+    /**
+     * Rotas para categorias
+     */
+    case '/categoria':        
+        CategoriaController::index();
+    break;
 
-        case'/livro/cadastro':
-            LivroController::cadastro();
-        break;
+    case '/categoria/cadastro':
+        CategoriaController::cadastro();
+    break;
 
-        case '/livro/delete':
-            LivroController::delete();
-        break;
+    case '/categoria/delete':
+        CategoriaController::delete();
+    break;
 
-        //
-        // Rotas para emprestimo
-        //
+    /**
+     * Rotas para livros
+     */
+    case '/livro':        
+        LivroController::index();
+    break;
 
-        case '/emprestimo':
-            EmprestimoController::index();
-        break;
+    case '/livro/cadastro':
+        LivroController::cadastro();
+    break;
 
-        case'/emprestimo/casdastro':
-            EmprestimoController::cadastro();
-        break;
-        
+    case '/livro/delete':
+        LivroController::delete();
+    break; 
+    
+    /**
+     * Rotas para Emprestimo
+     */
+    case '/emprestimo':        
+        EmprestimoController::index();
+    break;
 
-    }
-?>
+    case '/emprestimo/cadastro':-
+        EmprestimoController::cadastro();
+    break;
+
+    case '/emprestimo/delete':
+        EmprestimoController::delete();
+    break;  
+}
