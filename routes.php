@@ -12,13 +12,11 @@ use App\Controller\{
 
 $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-//var_dump($url);
-
 switch($url)
 {
     case '/':
         InicialController::index();
-    break;    
+    break;
 
     /**
      * Rotas para Login
@@ -34,7 +32,7 @@ switch($url)
     /**
      * Rotas para alunos
      */
-    case '/aluno':        
+    case '/aluno':
         AlunoController::index();
     break;
 
@@ -49,7 +47,8 @@ switch($url)
     /**
      * Rotas para autores
      */
-    case '/autor':        
+
+    case '/autor':
         AutorController::index();
     break;
 
@@ -58,13 +57,14 @@ switch($url)
     break;
 
     case '/autor/delete':
-        AutorController::delete();
+        AlunoController::delete();
     break;
 
     /**
      * Rotas para categorias
-     */
-    case '/categoria':        
+     */    
+
+    case '/categoria':
         CategoriaController::index();
     break;
 
@@ -79,7 +79,8 @@ switch($url)
     /**
      * Rotas para livros
      */
-    case '/livro':        
+
+     case '/livro':
         LivroController::index();
     break;
 
@@ -89,20 +90,21 @@ switch($url)
 
     case '/livro/delete':
         LivroController::delete();
-    break; 
-    
+    break;
+
     /**
-     * Rotas para Emprestimo
+     * Rotas para emprestimo
      */
-    case '/emprestimo':        
+
+    case "/emprestimo":
         EmprestimoController::index();
     break;
 
-    case '/emprestimo/cadastro':-
+    case "/emprestimo/cadastro":
         EmprestimoController::cadastro();
     break;
 
-    case '/emprestimo/delete':
+    case "/emprestimo/delete":
         EmprestimoController::delete();
-    break;  
+    break;
 }
