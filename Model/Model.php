@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Model;
+namespace WebBiblioteca\Model;
 
 abstract class Model
 {

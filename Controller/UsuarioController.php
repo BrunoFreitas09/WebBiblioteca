@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Controller;
+namespace WebBiblioteca\Controller;
 
-use App\Model\Usuario;
+use WebBiblioteca\Model\Usuario;
 
 use Exception;
 

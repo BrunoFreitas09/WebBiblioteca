@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Controller;
+namespace WebBiblioteca\Controller;
 
-use App\Model\Aluno;
+use WebBiblioteca\Model\Aluno;
 use Exception;
 
 final class AlunoController extends Controller

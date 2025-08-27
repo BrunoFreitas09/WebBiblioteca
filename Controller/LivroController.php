@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Controller;
+namespace WebBiblioteca\Controller;
 
-use App\Model\{ Categoria, Livro, Autor };
+use WebBiblioteca\Model\{ Categoria, Livro, Autor };
 use Exception;
 
 final class LivroController extends Controller
@@ -30,7 +30,7 @@ final class LivroController extends Controller
 
         $model = new Livro();
 
-        echo "Estou onde quero";
+        echo "Estou onde quero..... Era pra ta chamando issaqui nao. ";
 
         var_dump($model->Id_Autores);
         

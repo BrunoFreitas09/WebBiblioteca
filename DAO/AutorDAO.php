@@ -1,8 +1,8 @@
 <?php
 
-namespace App\DAO;
+namespace WebBiblioteca\DAO;
 
-use App\Model\Autor;
+use WebBiblioteca\Model\Autor;
 
 final class AutorDAO extends DAO
 {
@@ -63,7 +63,7 @@ final class AutorDAO extends DAO
         $stmt->bindValue(1, $id);
         $stmt->execute();
 
-        return $stmt->fetchObject("App\Model\Autor");
+        return $stmt->fetchObject("WebBiblioteca\Model\Autor");
     }
 
 
@@ -76,7 +76,7 @@ final class AutorDAO extends DAO
         $stmt->execute();
 
 
-        return $stmt->fetchAll(DAO::FETCH_CLASS, "App\Model\Autor");
+        return $stmt->fetchAll(DAO::FETCH_CLASS, "WebBiblioteca\Model\Autor");
     }
 
     public function delete(int $id) : bool

@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\Controller;
+namespace WebBiblioteca\Controller;
 
 
-use App\Model\Categoria;
+use WebBiblioteca\Model\Categoria;
 use Exception;
 
 

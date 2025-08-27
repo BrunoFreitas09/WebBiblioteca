@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\Controller;
+namespace WebBiblioteca\Controller;
 
 
-use App\Model\Autor;
+use WebBiblioteca\Model\Autor;
 use Exception;
 
 

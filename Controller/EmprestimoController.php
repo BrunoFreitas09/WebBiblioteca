@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\Controller;
+namespace WebBiblioteca\Controller;
 
 
-use App\Model\{ Emprestimo, Aluno, Livro };
+use WebBiblioteca\Model\{ Emprestimo, Aluno, Livro };
 use Exception;
 
 

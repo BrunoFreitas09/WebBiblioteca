@@ -1,8 +1,8 @@
 <?php
 
-namespace App\DAO;
+namespace WebBiblioteca\DAO;
 
-use App\Model\Aluno;
+use WebBiblioteca\Model\Aluno;
 
 final class AlunoDAO extends DAO
 {
@@ -53,7 +53,7 @@ final class AlunoDAO extends DAO
         $stmt->bindValue(1, $id);
         $stmt->execute();
 
-        return $stmt->fetchObject("App\Model\Aluno");
+        return $stmt->fetchObject("WebBiblioteca\Model\Aluno");
     }
 
 
@@ -63,7 +63,7 @@ final class AlunoDAO extends DAO
 
         $stmt = parent::$conexao->prepare($sql);  
         $stmt->execute();
-        return $stmt->fetchAll(DAO::FETCH_CLASS, "App\Model\Aluno");
+        return $stmt->fetchAll(DAO::FETCH_CLASS, "WebBiblioteca\Model\Aluno");
     }
 
     public function delete(int $id) : bool

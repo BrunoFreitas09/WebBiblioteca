@@ -1,8 +1,8 @@
 <?php
 
-namespace App\DAO;
+namespace WebBiblioteca\DAO;
 
-use App\Model\Login;
+use WebBiblioteca\Model\Login;
 
 
 final class LoginDAO extends DAO
@@ -16,7 +16,7 @@ final class LoginDAO extends DAO
         $stmt->bindValue(2, $model->Senha);
         $stmt->execute();
 
-        $model = $stmt->fetchObject("App\Model\Login");
+        $model = $stmt->fetchObject("WebBiblioteca\Model\Login");
 
         return is_object($model) ? $model : null;
     }

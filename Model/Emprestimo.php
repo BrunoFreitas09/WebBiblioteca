@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Model;
+namespace WebBiblioteca\Model;
 
-use App\DAO\EmprestimoDAO;
+use WebBiblioteca\DAO\EmprestimoDAO;
 use Exception;
 
 final class Emprestimo extends Model

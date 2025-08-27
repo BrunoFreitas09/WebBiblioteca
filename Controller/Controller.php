@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Controller;
+namespace WebBiblioteca\Controller;
 
-use App\Model\Model;
+use WebBiblioteca\Model\Model;
 
 abstract class Controller
 {

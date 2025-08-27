@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Model;
+namespace WebBiblioteca\Model;
 
-use App\DAO\AlunoDAO;
+use WebBiblioteca\DAO\AlunoDAO;
 use Exception;
 
 final class Aluno extends Model

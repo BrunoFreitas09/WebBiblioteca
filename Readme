@@ -1,4 +1,4 @@
-# AppMob
+# WebBibliotecaMob
 
 Aplicação web desenvolvida em PHP, estruturada em uma arquitetura MVC (Model-View-Controller). O projeto é organizado em pastas separadas para Controllers, Models e DAOs, e inclui arquivos de configuração, rotas e autoload.
 
@@ -21,4 +21,4 @@ Aplicação web desenvolvida em PHP, estruturada em uma arquitetura MVC (Model-V
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/BrunoFreitas09/AppMob.git
+   git clone https://github.com/BrunoFreitas09/WebBibliotecaMob.git

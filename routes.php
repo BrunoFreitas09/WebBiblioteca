@@ -1,6 +1,6 @@
 <?php
 
-use App\Controller\{
+use WebBiblioteca\Controller\{
     AlunoController,
     InicialController,
     LoginController,
@@ -106,5 +106,9 @@ switch($url)
 
     case "/emprestimo/delete":
         EmprestimoController::delete();
+    break;
+
+    case "/info":
+        phpinfo();
     break;
 }

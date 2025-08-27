@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Model;
+namespace WebBiblioteca\Model;
 
-use App\DAO\CategoriaDAO;
+use WebBiblioteca\DAO\CategoriaDAO;
 use Exception;
 
 final class Categoria extends Model

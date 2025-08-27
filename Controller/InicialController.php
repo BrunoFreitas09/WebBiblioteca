@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller;
+namespace WebBiblioteca\Controller;
 
 final class InicialController extends Controller
 {
