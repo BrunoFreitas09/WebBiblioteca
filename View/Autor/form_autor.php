@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sistemas Biblioteca - CAdasttro dos autores </title>
+    <title>Sistemas Biblioteca - Cadastro de Autores</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
@@ -13,7 +13,7 @@
     <div>
         <?php include VIEWS . '/Includes/menu.php' ?>
 
-        <h1>Cadastro de Aluno</h1>
+        <h1>Cadastro de Autor</h1>
 
         <?= $model->getErrors() ?>
 
@@ -23,18 +23,15 @@
            
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome:</label>
-                <input type="text" value="<?= $model->Nome ?>" 
-                       class="form-control" name="nome" id="nome">
+                <input type="text" value="<?= $model->Nome ?>" class="form-control" name="nome" id="nome">
             </div>
             <div class="mb-3">
-                <label for="data_nascimento" class="form-label">$Data_Nascimento:</label>
-                <input type="text" value="<?= $model->Data_nascimento ?>"  
-                       class="form-control" name="data_nascimento" id="data_nascimento">
+                <label for="data_nascimento" class="form-label">Data Nascimento:</label>
+                <input type="date" value="<?= $model->Data_Nascimento ?>"  class="form-control" name="data_nascimento" id="data_nascimento">
             </div>
             <div class="mb-3">
                 <label for="cpf" class="form-label">CPF:</label>
-                <input type="text" value="<?= $model->cpf ?>"  
-                class="form-control" name="cpf" id="cpf">
+                <input type="text" value="<?= $model->CPF ?>"  class="form-control" name="cpf" id="cpf">
             </div>            
             <button type="submit" class="btn btn-success">Salvar</button>
 

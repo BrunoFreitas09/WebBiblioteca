@@ -1,6 +1,5 @@
 <?php
 
-
 namespace WebBiblioteca\Controller;
 
 
@@ -24,10 +23,10 @@ final class CategoriaController extends Controller
             $model->setError($e->getMessage());
         }
 
-        parent::render('Categoria/lista_categoria.php', $model); 
+        parent::render('Categoria/lista_categoria.php', $model);    
     } 
 
-    
+   
     public static function cadastro() : void
     {
         parent::isProtected(); 
@@ -39,7 +38,7 @@ final class CategoriaController extends Controller
             if(parent::isPost())
             {
                 $model->Id = !empty($_POST['id']) ? $_POST['id'] : null;
-                $model->Descricao = $_POST['descricao'];
+                $model->Descricao = $_POST['descricao'] ?? "";
                 $model->save();
 
                 parent::redirect("/categoria");

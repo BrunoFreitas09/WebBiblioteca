@@ -30,9 +30,9 @@ final class LivroController extends Controller
 
         $model = new Livro();
 
-        echo "Estou onde quero..... Era pra ta chamando issaqui nao. ";
+        
 
-        var_dump($model->Id_Autores);
+        
         
         try
         {
